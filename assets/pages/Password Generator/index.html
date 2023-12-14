@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="assets/style/main.css" <link rel="stylesheet"
+        href="https://fontawesome.com/icons/copy?f=classic&s=regular">
+</head>
+
+<body>
+    <main>
+        <h1 class="Gerador">Gerador de senha</h1>
+
+
+        <div class="container">
+            <label for="length">Tamanho da senha:</label>
+            <input type="number" id="length" name="length" min="1" max="100" value="12">
+            <button onclick="generatePassword()" id="btn">Gerar senha</button>
+            <div style="display: none;" class="passbar" onclick="copyText()">
+                <p><span id="password"></span> <div class="copy"></div></p>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <p>Desenvolvido por <strong>Rafael David</strong>. © Todos os direitos reservados
+            2023.</p>
+    </footer>
+
+</body>
+<script src="assets/script/main.js"></script>
+
+</html>
