@@ -241,8 +241,9 @@ footer {
 
 .card {
     width: 15vw;
-    height: 50vh;
+    height: 30vh;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     font-family: 'Raleway', sans-serif;
