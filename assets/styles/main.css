@@ -58,10 +58,6 @@ section {
     font-size: 55px;
     text-align: center;
 }
-
-.oculto {
-    display: none;
-}
 /* nav */
 .logo {
     height: 50px;
@@ -187,13 +183,14 @@ body {
     font-size: 50px;
     font-weight: bold;
     position: relative;
-    right: 273px;
+    right: 217px;
 }
 
 .animation {
     height: 50px;
     overflow: hidden;
-    margin-left: 15px;
+    position: relative;
+    left: 15px;
 }
 .animation p {
     display: flex;
@@ -240,9 +237,10 @@ footer {
 }
 
 .card {
-    width: 15vw;
-    height: 30vh;
+    width: 13vw;
+    height: 35vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -338,131 +336,108 @@ footer {
 
 /* skills */
 
-
-.skills {
-    position: relative;
-    background: transparent
+.skills{
+    padding-top: 10rem;
+    background:transparent;
 }
 
-.skills h2 {
+.skills h2{
     display: inline-block;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.skills-row {
+.skills .skills-row{
     display: flex;
-    grid-gap: 1cm;
-    margin: 5px;
+    flex-wrap: wrap;
+    gap: 5rem;
 }
 
-.skills-row .skills-column {
-    margin-top: 100px;
+.skills-row .skills-column{
+    flex: 1 1 40rem;
 }
 
-.skills-box {
-    width: 40vw;
-    height: 100px;
-}
-
-.skills-column .title {
+.skills-column .title{
     position: relative;
     display: inline-block;
     font-size: 2.5rem;
     margin: 0 0 1.5rem;
 }
 
-.skills-column .skills-box {
+.skills-column .skills-box{
+    width: 40vw;
     position: relative;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-    width: 90%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
-    width: 80%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-    width: 50%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-    width: 20%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-    width: 95%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-    width: 60%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-    width: 85%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
-    width: 65%;
-}
-
-.skills-box .skills-content {
+.skills-box .skills-content{
     position: relative;
-    border: .2rem solid #313131;
+    border: .2rem solid #fff;
     border-radius: .6rem;
-    padding: .5rem 1.5rem;
+    padding: .6rem 1.5rem;
     z-index: 1;
     overflow: hidden;
 }
 
-.skills-box .skills-content::before {
+.skills-box .skills-content::before{
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background: rgba(138, 138, 138, 0.1588);
+    background: #5a189a;
     z-index: -1;
     transition: .5s;
 }
 
-.skills-box .skills-content:hover::before {
+.skills-box .skills-content:hover::before{
     width: 100%;
 }
 
-.skilss-content .progress {
+.skilss-content .progress{
     padding: 1rem 0;
 }
 
-.skills-content .progress h3 {
+.skills-content .progress h3{
     font-size: 1.7rem;
     display: flex;
     justify-content: space-between;
 }
 
-.skills-content .progress h3 span {
-    color: #ffffff;
+.skills-content .progress h3 span{
+    color: var(--text-color);
 }
 
-.skills-content .progress .bar {
+.skills-content .progress .bar{
     height: 2.5rem;
     border-radius: .6rem;
-    border: .2rem solid #ffffff;
+    border: .2rem solid #fff;
     padding: .5rem;
     margin: 1rem 0;
 }
 
-.skills-content .progress .bar span {
+.skills-content .progress .bar span{
     display: block;
     height: 100%;
     border-radius: .3rem;
-    background: #ffffff;
+    background: #fff;
 }
 
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+    width: 90%;
+}
 
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+    width: 80%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+    width: 60%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
+    width: 25%;
+}
 
 /* contacts */
 
@@ -521,13 +496,14 @@ textarea {
     justify-content: center;
     align-items: center;
     transform: translateY(150px);
+    gap: 55px;
 }
 
 button[type="submit"] {
     background: linear-gradient(-180deg, #8800ff, rgb(247, 0, 177));
     border: none;
     cursor: pointer;
-    width: 10vw;
+    width: 15vw;
     height: 35px;
     color: white;
     font-size: 16px;
@@ -645,14 +621,10 @@ textarea {
 
 
 
-
-
-
-
-@media (max-width:480px) {
+@media (max-width:860px) {
     label #btn {
         display: block;
-        transform: translateX(100px);
+        transform: translateX(50px);
     }
 
     ul {
@@ -660,7 +632,7 @@ textarea {
         width: 100%;
         height: 100vh;
         background-color: #313131;
-        top: 80px;
+        top: 60px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -686,14 +658,14 @@ textarea {
     }
 
     #check:checked~label #cancel {
-        transform: translateX(100px);
+        transform: translateX(50px);
         display: block;
     }
+}
 
 
 
-
-
+@media (max-width:480px) {
 
     .logo {
         height: 30px;
@@ -705,11 +677,6 @@ textarea {
         width: fit-content;
     }
 
-    .principal {
-        padding: 40px;
-        font-size: small;
-    }
-
     .projects {
         display: flex;
         flex-direction: row;
@@ -718,13 +685,17 @@ textarea {
 
     .form {
         position: relative;
-        bottom: 50px;
+        bottom: 80px;
     }
 
     .form-text {
+        display: flex;
+        width: 80vw;
         font-size: 10px;
+        text-align: justify;
         position: relative;
-        bottom: 70px;
+        left: 5px;
+        bottom: 55px;
     }
 
     .card {
@@ -735,21 +706,36 @@ textarea {
     input {
         position: relative;
         margin: 0;
-        width: 40vw;
-        left: 40px;
+        width: 41vw;
+        left: 0px;
+        bottom: 45px;
     }
 
     textarea {
-        width: 70vw;
+        width: 85vw;
+        position: relative;
+        bottom: 45px;
+    }
+
+    .input-group{
+        display: flex;
+        position: relative;
+    }
+    .submit-button {
+    position: relative;
+    bottom: 45px;
     }
 
     .principal {
-        /* background-color: #f2f2f2; */
+        display: flex;
+        flex-direction: column;
+        width: 120vw;
         border-radius: 6px;
-        font-size: 12px;
-        position: relative;
-        left: 40px;
-        
+        padding: 50px;
+        font-size: 10px;
+        position: absolute;
+        left:-15%;
+        bottom: 15%;
     }
     .container {
         position: relative;
@@ -771,4 +757,10 @@ textarea {
         position: relative;
         bottom: 40px;
     }
+
+    .skills-column, .skills-box
+    {
+        width: 90vw;
+    }
+
 }
