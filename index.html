@@ -14,38 +14,37 @@
         <div class="logo">
             <img src="assets/img/927500313834.png" alt="">
         </div>
-        <nav class="menu">
-            <input type="checkbox" name="checkbox" id="check">
-            <label for="check">
-                <ion-icon name="menu-outline" id="btn"></ion-icon>
-                <ion-icon name="close-outline" id="cancel"></ion-icon>
-            </label>
-
-            <ul>
-                <li><a href="#home" class="hover"><ion-icon name="home-sharp" class="nav-icons"></ion-icon> HOME</a>
-                </li>
-                <li><a href="#about" class="hover"><ion-icon name="person-sharp" class="nav-icons"></ion-icon> ABOUT</a>
-                </li>
-                <li><a href="#projects" class="hover"><ion-icon name="rocket-sharp" class="nav-icons"></ion-icon>
-                        PROJECTS</a></li>
-                <li><a href="#skills" class="hover"><ion-icon name="briefcase-sharp" class="nav-icons"></ion-icon>
-                        SKILLS</a></li>
-                <li><a href="#contact" class="hover"><ion-icon name="call-sharp" class="nav-icons"
-                            class="hover"></ion-icon>
-                        CONTACT</a></li>
-            </ul>
-        </nav>
+        <div class="header-bg">
+            <nav class="menu">
+                <input type="checkbox" name="checkbox" id="check">
+                <label for="check">
+                    <ion-icon name="menu-outline" id="btn"></ion-icon>
+                    <ion-icon name="close-outline" id="cancel"></ion-icon>
+                </label>
+    
+                    <ul class="nav-ul">
+                        <li><a class="a" href="#home">HOME</a></li>
+                        <li><a class="a" href="#about">ABOUT</a></li>
+                        <li><a class="a" href="#projects">PROJECTS</a></li>
+                        <li><a class="a" href="#skills">SKILLS</a></li>
+                        <li><a class="a" href="#contact">CONTACT</a></li>
+                    </ul>
+            </nav>
+        </div>
+      
 
 
+        
     </header>
 
     <main>
         <section id="home" class="home">
 
-            <div class="principal">
+            <div>
                 <h1>Hi There!</h1>
+                
                 <div class="container">
-                    <h1>I'm</h1>
+                    <h1>I'M</h1>
                     <div class="animation">
                         <p>Rafael Landim</p>
                         <p>Web Developer</p>
@@ -53,9 +52,15 @@
                     </div>
                 </div>
 
-                <p>I am a web developer and designer from Brazil, passionate about technology and always looking to
+                <!-- <p>I am a web developer and designer from Brazil, passionate about technology and always looking to
                     learn more. <br> specialized in creating websites that are easy to use
-                    and visually appealing.</p>
+                    and visually appealing.</p> -->
+
+            </div>
+
+
+
+               
 
 
 
@@ -63,12 +68,10 @@
                     <a href="https://www.instagram.com/landim1st/"><ion-icon name="logo-instagram"></ion-icon></a>
                     <a href="https://github.com/landim9"><ion-icon name="logo-github"></ion-icon></a>
                     <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href="https://www.cloudskillsboost.google/public_profiles/c9dc6b79-89ae-41ca-9dfd-4c4bd5a0430a"><ion-icon
-                            name="logo-google"></ion-icon></a>
+                    <a href="https://www.cloudskillsboost.google/public_profiles/c9dc6b79-89ae-41ca-9dfd-4c4bd5a0430a"><ion-icon name="logo-google"></ion-icon></a>
                 </div>
 
 
-            </div>
 
 
 
@@ -111,84 +114,47 @@
         <section id="projects">
             <h1 class="section-title">PROJECTS</h1>
 
-
             <div class="project-container">
-                <div class="card ">
-                    <div class="content">
-                        <h2>Password Generator</h2>
+                <div class="cards1">
+                    <div class="package">
+                        <div class="package2"></div>
+                      </div>
+                      <div class="package">
+                        <div class="package2"></div>
+                      </div>
+                      <div class="package">
+                        <div class="package2"></div>
+                      </div>
+                </div>
+              
+                    
 
-                        <a href="assets/pages/Password Generator/index.html">
-                            <button class="btn-project">
-                                <span> View
-                                </span>
-                            </button></a>
-                    </div>
+                <div class="cards2">
+                    <div class="package">
+                        <div class="package2"></div>
+                      </div>
+                      <div class="package">
+                        <div class="package2"></div>
+                      </div>
+                      <div class="package">
+                        <div class="package2"></div>
+                      </div>
                 </div>
-                <div class="card ">
-                    <div class="content">
-                        <h2>Morse Translator</h2>
-                        <a href="assets/pages/Morse/index.html"><button class="btn-project">
-                                <span> View
-                                </span>
-                            </button></a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <h2>Unavaliable</h2>
-                        <a href=""><button class="btn-project">
-                                <span> View
-                                </span>
-                            </button></a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <h2>Unavaliable</h2>
-                        <a href=""><button class="btn-project">
-                                <span> View
-                                </span>
-                            </button></a>
+                      
 
-                    </div>
-                </div>
+              
+                
             </div>
+
 
 
         </section>
 
         <section id="skills" class="skills">
+
             <h1 class="section-title">SKILLS</h1>
 
-            <div class="skills-row">
-                <div class="skills-column">
-                    <h3 class="title">Coding Skills<span class="animate scroll" style="--i:2;"></span></h3>
-    
-                    <div class="skills-box">
-                        <div class="skills-content">
-                            <div class="progress">
-                                <h3>HTML <span>90%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-    
-                            <div class="progress">
-                                <h3>CSS <span>80%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-    
-                            <div class="progress">
-                                <h3>JavaScript <span>60%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-    
-                            <div class="progress">
-                                <h3>Python <span>25%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-                        </div>
-                        <span class="animate scroll" style="--i:3;"></span>
-                    </div>
-                </div>
+            
 
 
         </section>
@@ -200,35 +166,7 @@
 
 
 
-            <div class="form">
-                <p class="form-text">Feel free to get in touch with me. I am always open to discussing new projects,
-                    creative ideas or
-                    opportunities to be part of your visions.</p>
-                <div class="input-group">
-                    <div class="grizinho">
-                        <input required="" type="text" name="text" placeholder="Name" class="input">
-
-
-                        <input type="email" class="input" id="input1" placeholder="Email" required>
-                    </div>
-
-                    <div class="input-group">
-                        <div class="grizinho">
-
-                            <input type="tel" class="input" placeholder="Phone Number" id="input2" required>
-
-                            <input type="text" class="input" placeholder="Subject" id="input3" required>
-                        </div>
-
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Type Your Message Here..."
-                            required></textarea>
-                        <div class="submit-button">
-                            <button type="submit" class="submit">SEND</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            
 
 
 
