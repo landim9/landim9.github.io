@@ -73,11 +73,15 @@ section {
     transform: scale(1.2);
 }
 
-.header-bg ul li a.active::after {
+.header-bg ul li a::after {
     transform: scaleX(1);
     transform-origin: left;
 }
 
+.header-bg ul li a::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
 .menu {
     display: flex;
     align-items: center;
@@ -102,7 +106,7 @@ label #cancel {
 }
 
 ul { 
-    margin: 20px auto 0; 
+    margin: 0px auto 0; 
     padding: 0; 
     list-style: none; 
     width: 600px;
@@ -135,7 +139,14 @@ ul {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
-  .a:hover:after { 
+
+
+  .a:hover::after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  .a.active::after { 
     width: 100%; 
     left: 0; 
   }
