@@ -28,13 +28,14 @@ header {
     position: sticky;
     width: 100%;
     height: 90px;
-    padding: 1rem 9%;
+    padding: 1rem 1%;
     /* background-color: #313131; */
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
     top: 0;
     z-index: 1;
+    
 }
 
 main {
@@ -105,14 +106,14 @@ label #cancel {
     display: none;
 }
 
-ul { 
+.header-bg > ul { 
     margin: 0px auto 0; 
     padding: 0; 
     list-style: none; 
     width: 600px;
     text-align: center;
   }
-  li { 
+  .header-bg > li { 
     display: table-cell; 
     position: relative; 
     padding: 15px 0;
@@ -156,6 +157,13 @@ ul {
       }
   }
 
+
+
+
+
+
+
+  
 
 /* home */
 
