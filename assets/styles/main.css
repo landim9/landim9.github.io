@@ -326,6 +326,28 @@ footer {
 
 
 
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    top: 250px;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    border: #ffffff 2px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: cente;
+}
+
+
 /* contacts */
 
 
