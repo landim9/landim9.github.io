@@ -27,7 +27,6 @@ body {
 header {
     position: sticky;
     width: 100%;
-    /* height: 90px; */
     padding: 1rem 1%;
     display: flex;
     justify-content: right;
@@ -168,14 +167,12 @@ body {
 
 .container {
     color: #e5e5e5;
-    font-size: 2.26rem;
     text-transform: uppercase;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 80px;
     font-weight: bold;
     position: relative;
     bottom: 20px;
@@ -189,7 +186,7 @@ body {
     height: 50px;
     overflow: hidden;
     position: relative;
-    left: 15px;
+    left: 20px;
 }
 .animation p {
     display: flex;
@@ -199,13 +196,11 @@ body {
     animation: show 8s infinite;
     font-size: 60px;
     gap: 5px;
-
 }
 
 .home-content {
-    position: relative;
-    top: 120px;
-    width: 90%;
+    
+    transform: translateY(120px);
 }
 
 @keyframes show {
@@ -438,6 +433,10 @@ footer {
 
 
 @media (max-width:768px) {
+
+    body{
+        overflow-y: hidden;
+    }
     label #btn {
         display: block;
         transform: translateX(30px);
