@@ -1,196 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael Landim</title>
-    <link rel="stylesheet" href="assets/styles/main.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/img/927500313834.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body id="page-top">
-    <header>
-        <div class="header-bg">
-            <nav class="menu">
-                <input type="checkbox" name="checkbox" id="check">
-                <label for="check">
-                    <ion-icon name="menu-outline" id="btn"></ion-icon>
-                    <ion-icon name="close-outline" id="cancel"></ion-icon>
-                </label>
-    
-                    <ul class="nav-ul">
-                        <li><a class="a" href="#page-top">HOME</a></li>
-                        <li><a class="a" href="#about">ABOUT</a></li>
-                        <li><a class="a" href="#projects">PROJECTS</a></li>
-                        <li><a class="a" href="#skills">SKILLS</a></li>
-                        <li><a class="a" href="#footer">CONTACT</a></li>
-                    </ul>
-            </nav>
+<body>
+
+    <div id="loading-screen">
+        <div id="loading-bar"></div>
+        <div id="loading-text">0%</div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="widget1">
+                <div class="info-user">
+                    <div class="img-user">
+                        <!-- <img src="img/user-perfil.png" alt="user"> -->
+                    </div>
+                    <div class="name-user">
+                        <h1>Rafael Landim</h1>
+                        <span>Desenvolvedor Web</span>
+                    </div>
+                </div>
+                <div class="info-icon">
+                    <img src="assets/img/smile-icon.png" alt="icon">
+                </div>
+            </div>
+            <div class="widget2">
+                <div class="hard-skills">
+                    <span class="destaque">Hard Skills</span>
+                    <div class="skills-icons">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js"></i>
+                        <i class="fab fa-bootstrap"></i>
+                        <i class="fab fa-react"></i>
+                        <i class="fab fa-node"></i>
+                        <i class="fab fa-php"></i>
+                        <i class="fab fa-java"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-wix"></i>
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="widget3">
+                <a href="#" class="tread">
+                    <div class="text-tread">
+                        <!-- <h1>Minha marca</h1> -->
+                        <span>Desejar algo maior pra sua vida não significa que você está insatisfeito com o que tem.</span>
+                    </div>
+                    <div class="img-tread"></div>
+                </a>
+                <div class="redes-sociais">
+                    <a class="box-social tiktok" href="https://www.tiktok.com/@riicardomoura"><i
+                            class="fab fa-tiktok"></i></a>
+                    <a class="box-social instagram" href="https://www.instagram.com/landim1st/"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="box-social github" href="https://github.com/landim9"><i
+                            class="fab fa-github"></i></a>
+                    <a class="box-social linkedin" href="#"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="widget4">
+                <a href="assets/pages/portfolio/portfolio.html" class="meu-site" target="_blank">
+                    <img src="assets/img/web-white-icon.png" alt="web">
+                    <h1>Meu site portfolio</h1>
+                </a>
+            </div>
+            <!-- <div class="widget5">
+                <a href="https://www.viverdefreelancer.com.br" class="freelancer" target="_blank">
+                    <img src="img/web-white-icon.png" alt="web">
+                    <h1>Freelancer de Sucesso</h1>
+                </a>
+            </div> -->
+            <div class="widget6">
+                <span>Estou escutando...</span>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3LLqFXeZt4AdVe9GdBes9y?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
         </div>
-    </header>
-    <main>
-        <section id="home" class="home">
-            <div class="home-content">
-                <div class="hi">
-                    <h1 data-aos="fade-up">Hi There!</h1>
-                </div>
-                <div class="container" data-aos="fade-down">
-                    <h1>I'M</h1>
-                    <div class="animation">
-                        <p>Rafael Landim</p>
-                        <p>Web Developer</p>
-                        <p>Systems Engineer</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    </div>
 
-
-        <section id="about" class="about">
-            <h1 class="section-title">ABOUT ME</h1>
-
-            <div class="container-about">
-                <div class="content-about">
-                    <div class="info">
-                        <h2 data-aos="fade-up">HELLO! I'M <span class="rafael">RAFAEL</span></h2>
-                        <br>
-                        <p data-aos="fade-left">My name is Rafael Landim and I am a 16 years old web developer from Brazil. I have been
-                            working with
-                            <span class="js">JAVASCRIPT</span>,
-                            <span class="h-c">HTML and CSS.</span>
-                        </p>
-                        <br>
-                        <p data-aos="fade-right">I love to learn new things about programming languages and frameworks, always looking for the
-                            best solutions to solve problems in
-                            the web development world.</p>
-                        <br>
-                        <p data-aos="fade-left">always looking for opportunities to improve myself.
-                            if you want to know more, feel free to contact me.</p>
-                        <br>
-                        <p data-aos="fade-right">I have experience in creating websites, developing mobile applications, and designing
-                            interfaces for web pages.</p>
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
-
-        <section id="projects">
-            <h1 class="section-title">PROJECTS</h1>
-
-            <div class="project-container" >
-                <div class="cards1" data-aos="fade-right">
-                    <div class="package">
-                        <div class="package2"></div>
-                      </div>
-                      <div class="package">
-                        <div class="package2"></div>
-                      </div>
-                      <div class="package">
-                        <div class="package2"></div>
-                      </div>
-                </div>
-              
-                    
-
-                <div class="cards2" data-aos="fade-left">
-                    <div class="package">
-                        <div class="package2"></div>
-                      </div>
-                      <div class="package">
-                        <div class="package2"></div>
-                      </div>
-                      <div class="package">
-                        <div class="package2"></div>
-                      </div>
-                </div>
-                      
-
-              
-                
-            </div>
-
-
-
-        </section>
-
-        <section id="skills" >
-            <h1 class="section-title">SKILLS</h1>
-
-            <div class="skills">
-                <div class="box"> 
-                    <ion-icon name="logo-html5"></ion-icon>
-                </div>
-                <div class="box"> 
-                    <ion-icon name="logo-html5"></ion-icon>
-                </div>
-                <div class="box"> 
-                    <ion-icon name="logo-html5"></ion-icon>
-                </div>
-                <div class="box"> 
-                    <ion-icon name="logo-html5"></ion-icon>
-                </div>
-                <div class="box"> 
-                    <ion-icon name="logo-html5"></ion-icon>
-                </div>
-                <div class="box"> 
-                    <ion-icon name="logo-html5"></ion-icon>
-                </div>
-                <div class="box"> 
-                    <ion-icon name="logo-html5"></ion-icon>
-                </div>
-                <div class="box"> 
-                    <ion-icon name="logo-html5"></ion-icon>
-                </div>
-
-            </div>
-
-            
-
-
-        </section>
-
-
-        <section id="contact">
-            <h1 class="section-title">CONTACT ME</h1>
-
-            <div class="card">
-                <div class="social">
-                    <a href="https://www.instagram.com/landim1st/"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="https://github.com/landim9"><ion-icon name="logo-github"></ion-icon></a>
-                    <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href="https://www.cloudskillsboost.google/public_profiles/c9dc6b79-89ae-41ca-9dfd-4c4bd5a0430a"><ion-icon name="logo-google"></ion-icon></a>
-                </div>
-            </div>
-
-
-
-
-            
-
-
-
-        </section>
-
-
-
-
-
-
-    </main>
-
-    <footer id="footer">
-        <p>Copyright © 2023 by Rafael David | All Rights Reserved.</p>
-    </footer>
+    <script src="assets/script/animationLoading.js"></script>
 </body>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
-<script src="assets/script/script.js" type="module"></script>
+
 </html>
