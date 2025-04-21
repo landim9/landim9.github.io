@@ -112,6 +112,12 @@ a {
     height: 50px;
     border-radius: 8px;
     border: 2px solid var(--color-green);
+    
+}
+
+.img-user img {
+    height: 100%;
+    border-radius: 13%;
 }
 
 .name-user h1 {
