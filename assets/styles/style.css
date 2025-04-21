@@ -93,8 +93,7 @@ a {
 }
 
 .widget1 img {
-    width: 100%;
-    border-radius: 8px;
+
 }
 
 .info-user {
@@ -110,14 +109,14 @@ a {
 .img-user {
     width: 50px;
     height: 50px;
-    border-radius: 8px;
+    border-radius: 15%;
     border: 2px solid var(--color-green);
-    
 }
 
-.img-U {
+.imagem {
+    width: 100%;
     height: 100%;
-    border-radius: 13%;
+    border-radius: 10%;
 }
 
 .name-user h1 {
@@ -141,6 +140,8 @@ a {
 
 .info-icon img {
     width: 100%;
+    height: 100%;
+    border-radius: 8px;
     animation: rotate 5s linear infinite;
 }
 

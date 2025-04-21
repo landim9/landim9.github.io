@@ -478,8 +478,8 @@ footer {
         display: block;
     }
 
-    .home-content{
-
+    .home-content, .container {
+        width: 100%;
     }
 }
 
