@@ -263,7 +263,9 @@ a {
 .text-tread {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction:row;
     justify-content: center;
 }
 
@@ -277,6 +279,7 @@ a {
 .text-tread span {
     color: #fafafab4;
     font-size: 0.8rem;
+    transform: translateY(50px);
 }
 
 .img-tread {
