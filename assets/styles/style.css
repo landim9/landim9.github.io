@@ -263,7 +263,9 @@ a {
 .text-tread {
     width: 100%;
     display: flex;
+    gap: 30px;
     flex-wrap: wrap;
+    text-align: left;
     align-items: center;
     flex-direction:row;
     justify-content: center;
@@ -279,12 +281,11 @@ a {
 .text-tread span {
     color: #fafafab4;
     font-size: 0.8rem;
-    transform: translateY(50px);
 }
 
 .img-tread {
     width: 100%;
-    height: 100px;
+    height: 70px;
     background-image: url(/img/tread-skateboard.jpg);
     background-position: center;
     background-size: 100%;
@@ -304,14 +305,15 @@ a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 15px;
+    gap: 10px;
+    transform: translateY(-5px);
 }
 
 .redes-sociais a {
     background-color: var(--color-black);
     border-radius: 10px;
     width: 45%;
-    height: 45%;
+    height: 50%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
